@@ -1,0 +1,7 @@
+{
+    "welcome": "Welcome {}",
+    "good_morning": {
+        "male": "Good Morning MR {}",
+        "female": "Good Morning MRS {}"
+    }
+}

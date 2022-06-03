@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:webinar_i18n/translations/locale_keys.g.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 class WelcomeHomeLayout extends StatelessWidget {
   const WelcomeHomeLayout({Key? key}) : super(key: key);
@@ -8,10 +10,10 @@ class WelcomeHomeLayout extends StatelessWidget {
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: const [
-          Text('Selamat Datang Ilzam', style: TextStyle(fontSize: 14)),
+        children: [
+          Text(LocaleKeys.welcome, style: TextStyle(fontSize: 14)).tr(args: ["Ilzam"]),
           SizedBox(height: 12),
-          Text('Selamat Pagi Pak Ilzam', style: TextStyle(fontSize: 14)),
+          Text(LocaleKeys.good_morning, style: TextStyle(fontSize: 14)).tr(args: ["Ilzam"], gender: "male"),
         ],
       ),
     );

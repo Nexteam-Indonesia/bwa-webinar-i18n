@@ -1,0 +1,7 @@
+{
+    "welcome": "Selamat Datang {}",
+    "good_morning": {
+        "male": "Selamat Pagi Pak {}",
+        "female": "Selamat Pagi Bu {}"
+    }
+}
