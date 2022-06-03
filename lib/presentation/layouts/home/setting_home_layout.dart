@@ -1,4 +1,5 @@
 import 'package:checkbox_grouped/checkbox_grouped.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 class SettingHomeLayout extends StatelessWidget {
@@ -19,6 +20,9 @@ class SettingHomeLayout extends StatelessWidget {
             itemTitleStyle: const TextStyle(fontSize: 13),
           ),
           checkFirstElement: false,
+          onItemSelected: (value) {
+            EasyLocalization.of(context)!.setLocale(Locale(value));
+          },
         )
       ],
     );
